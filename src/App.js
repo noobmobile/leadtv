@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   ChakraProvider,
   Box,
@@ -16,6 +16,9 @@ import FontContext from "./contexts/FontContext";
 import { FontProvider } from "./contexts/FontProvider";
 
 function App() {
+  useEffect(() => {
+    document.title = "Lead TV";
+  }, []);
   return (
     <ChakraProvider theme={theme}>
       <FontProvider>
