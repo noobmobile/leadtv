@@ -12,6 +12,7 @@ const MovieCard = ({ movie, openDrawer }) => {
       borderRadius="10px"
       shadow="xl"
       cursor="pointer"
+      minH="190px"
       transition="transform .3s"
       _hover={{ transform: "scale(1.1)" }}
       position="relative"
